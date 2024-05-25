@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress Bar Email</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .progress-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .progress-row {
+    background: none;
+  }
+  .progress-cell {
+    background: none;
+    padding: 0;
+    text-align: center;
+  }
+  .progress-marker {
+    width: 32px;
+    height: 32px;
+    background: #0E568B;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 3px;
+  }
+  .progress-marker-inner {
+    width: 26px;
+    height: 26px;
+    background: #0E568B;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: none;
+    border-bottom: 16px solid #6EC6EE;
+  }
+  /* border-bottom: 16px solid;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-image-slice: 1; */
+</style>
+</head>
+<body>
+
+<table class="progress-table">
+  <tr style="text-align: center; color: #0E568B;">
+      <td style="width:5%"></td>
+      <td style="width:10%">Your Rate</td>
+      <td style="width:30%;"></td>
+      <td style="width:35%;padding-left: 20px;">Average Day Rate</td>
+      <td style="width:20%"></td>
+  </tr>
+  <tr class="progress-row">
+    <td class="progress-cell" style="width:5%">
+      <div class="progress-bar bleft-radius"></div>
+    </td>
+    <td class="progress-cell" style="width:10%">
+        <div class="progress-bar">
+            <span class="progress-marker">
+                <span class="progress-marker-inner"></span>
+            </span>
+        </div>
+    </td>
+    <td class="progress-cell" style="width:30%;">
+      <div class="progress-bar"></div>
+    </td>
+    <td class="progress-cell" style="width:35%;">
+        <div class="progress-bar" style="border-bottom: 16px solid #0E568B; text-align:left">
+            <span class="progress-marker">
+                <span class="progress-marker-inner"></span>
+            </span>
+        </div>
+      </td>
+    <td class="progress-cell" style="width:20%">
+      <div class="progress-bar" style="text-align: left;">
+        <span class="progress-marker">
+            <span class="progress-marker-inner"></span>
+        </span>
+      </div>
+    </td>
+   
+  </tr>
+  <tr style=" color: #0E568B;">
+    <td style="width:5%"></td>
+    <td style="width:10%;padding-top: 15px;text-align: center;">$500</td>
+    <td style="width:30%;"></td>
+    <td style="width:35%;padding-top: 15px;text-align: left;">$800</td>
+    <td style="width:20%;padding-top: 15px;text-align: left;">$1400</td>
+</tr>
+</table>
+
+</body>
+</html>
